@@ -13,6 +13,7 @@
 		73D171E12BCE4CC4008020F9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 73D171E02BCE4CC4008020F9 /* Base */; };
 		73D171E32BCE4CC5008020F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D171E22BCE4CC5008020F9 /* Assets.xcassets */; };
 		73D171E62BCE4CC5008020F9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 73D171E52BCE4CC5008020F9 /* Base */; };
+		73D171EE2BCE6413008020F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D171ED2BCE6413008020F9 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		73D171E22BCE4CC5008020F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73D171E52BCE4CC5008020F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73D171E72BCE4CC5008020F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D171ED2BCE6413008020F9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				73D171E22BCE4CC5008020F9 /* Assets.xcassets */,
 				73D171E42BCE4CC5008020F9 /* LaunchScreen.storyboard */,
 				73D171E72BCE4CC5008020F9 /* Info.plist */,
+				73D171ED2BCE6413008020F9 /* SecondViewController.swift */,
 			);
 			path = TransferApp;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D171EE2BCE6413008020F9 /* SecondViewController.swift in Sources */,
 				73D171DE2BCE4CC4008020F9 /* ViewController.swift in Sources */,
 				73D171DA2BCE4CC4008020F9 /* AppDelegate.swift in Sources */,
 				73D171DC2BCE4CC4008020F9 /* SceneDelegate.swift in Sources */,
