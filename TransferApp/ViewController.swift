@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func editDataWithProperty(_ sender: UIButton){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let editScreen = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        editScreen.updatingData = dataLabel.text ?? ""
+        
+        self.navigationController?.pushViewController(editScreen, animated: true)
+    }
 
 
 }
