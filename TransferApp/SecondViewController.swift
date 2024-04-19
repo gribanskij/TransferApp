@@ -11,7 +11,7 @@ class SecondViewController : UIViewController {
     
     var updatingData: String = ""
     
-    @IBOutlet var dataTextField: UITextField?
+    @IBOutlet var dataTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,13 @@ class SecondViewController : UIViewController {
     private func updateTextFieldData(withText text:String){
         
         dataTextField?.text = text
+    }
+    
+    @IBAction func saveDataWithProperty (_ sender: UIButton){
+        
+        self.navigationController?.viewControllers.forEach {
+            viewController in (viewController as? ViewController)?.updateData = dataTextField.text ?? ""
+        }
     }
     
     
