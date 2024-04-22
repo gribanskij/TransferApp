@@ -29,22 +29,37 @@
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                     </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="editDataWithProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJR-3k-pFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRz-mc-wUB">
+                                <rect key="frame" x="30" y="539" width="333" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Изменить с помощью Segue">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Haw-pk-1EB" kind="show" identifier="toEditScreen" id="kB4-YH-VUK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
+                            <constraint firstItem="nRz-mc-wUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Du-R7-bBg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jwf-v6-g0V" secondAttribute="trailing" constant="30" id="2vt-wz-im7"/>
                             <constraint firstItem="Y9R-VV-ICm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mop-9i-em1"/>
                             <constraint firstItem="Y9R-VV-ICm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vq5-rn-4FW"/>
                             <constraint firstItem="jwf-v6-g0V" firstAttribute="top" secondItem="Y9R-VV-ICm" secondAttribute="bottom" constant="30" id="alc-8h-geK"/>
+                            <constraint firstItem="nRz-mc-wUB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eia-fL-uYu"/>
                             <constraint firstItem="jwf-v6-g0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="i8d-kZ-keQ"/>
+                            <constraint firstItem="nRz-mc-wUB" firstAttribute="top" secondItem="jwf-v6-g0V" secondAttribute="bottom" constant="30" id="ky9-OP-dNL"/>
                             <constraint firstItem="jwf-v6-g0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zob-Yd-NIN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nRz-mc-wUB" secondAttribute="trailing" constant="30" id="zqR-5D-x8z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Сцена А" largeTitleDisplayMode="always" id="J9W-Zw-eZS"/>
@@ -96,16 +111,29 @@
                                     <action selector="saveDataWithProperty:" destination="Haw-pk-1EB" eventType="touchUpInside" id="ETE-u2-7hP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N5-Fo-nz1">
+                                <rect key="frame" x="30" y="538" width="333" height="35"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Сохранить с помощью unwind"/>
+                                <connections>
+                                    <segue destination="4yN-s4-qTO" kind="unwind" identifier="toFirstScreen" unwindAction="unwindToFirstScreenWith_segue:" id="g0k-cs-KUb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b9c-fv-IND"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="fe6-Qj-iZM" firstAttribute="leading" secondItem="b9c-fv-IND" secondAttribute="leading" constant="30" id="2JW-bC-8f6"/>
                             <constraint firstItem="q4H-eU-YJz" firstAttribute="centerX" secondItem="fn9-KB-lhj" secondAttribute="centerX" id="4X3-G6-4gD"/>
+                            <constraint firstItem="2N5-Fo-nz1" firstAttribute="leading" secondItem="b9c-fv-IND" secondAttribute="leading" constant="30" id="5MI-vO-ZvA"/>
+                            <constraint firstItem="2N5-Fo-nz1" firstAttribute="top" secondItem="q4H-eU-YJz" secondAttribute="bottom" constant="30" id="ALV-0h-y0e"/>
+                            <constraint firstItem="b9c-fv-IND" firstAttribute="trailing" secondItem="2N5-Fo-nz1" secondAttribute="trailing" constant="30" id="BW9-kX-jLS"/>
                             <constraint firstItem="fe6-Qj-iZM" firstAttribute="centerY" secondItem="fn9-KB-lhj" secondAttribute="centerY" id="JPD-dP-cS4"/>
                             <constraint firstItem="b9c-fv-IND" firstAttribute="trailing" secondItem="fe6-Qj-iZM" secondAttribute="trailing" constant="30" id="Tje-s4-ThH"/>
                             <constraint firstItem="b9c-fv-IND" firstAttribute="trailing" secondItem="q4H-eU-YJz" secondAttribute="trailing" constant="30" id="arB-sv-Ea8"/>
                             <constraint firstItem="q4H-eU-YJz" firstAttribute="leading" secondItem="b9c-fv-IND" secondAttribute="leading" constant="30" id="e0J-wz-Qd4"/>
+                            <constraint firstItem="2N5-Fo-nz1" firstAttribute="centerX" secondItem="fn9-KB-lhj" secondAttribute="centerX" id="nlD-Qg-Y3P"/>
                             <constraint firstItem="q4H-eU-YJz" firstAttribute="top" secondItem="fe6-Qj-iZM" secondAttribute="bottom" constant="30" id="y7Z-bd-pB7"/>
                         </constraints>
                     </view>
@@ -115,6 +143,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48L-jj-xMJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4yN-s4-qTO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1080" y="-394"/>
         </scene>
@@ -125,9 +154,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
